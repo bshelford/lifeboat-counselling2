@@ -61,6 +61,11 @@ iframe {
     width: 100%;
 }
 
+.services-text {
+    display: flex;
+    flex-direction: column;
+}
+
 .button-group{
     display: flex;
     justify-content: flex-start;
@@ -107,7 +112,7 @@ iframe {
     height: 54px;
 }
 
-.services-text {
+.services-info {
     padding-top: 24px;
 }
 
@@ -189,8 +194,14 @@ p {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(50,50,93,.11),
    0 1px 3px rgba(0,0,0,.08);
-  margin: 24px 0px;
+  margin: 24px 10px;
   transition: all 0.15s ease;
+}
+
+.default-low:link,
+.default-low:visited {
+    color: #E94680;
+    background-color: #fff;
 }
 
 .button:focus,
@@ -198,6 +209,12 @@ p {
     background-color: #FF5C96;
     box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
     transform: translateY(-1px)
+}
+
+.default-low:focus,
+.default-low:hover {
+    color: #FF5C96;
+    background-color: #fff;
 }
 
 a:hover {
@@ -230,13 +247,49 @@ a:hover {
         flex-wrap: wrap;
         justify-content: space-between;
     }
+
+    .services-text {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .services-text {
+        display: flex
+    }
+
+    h2 {
+        font-size: 2.618em;
+    }
+
+    h5 {
+        font-size: 4vw;
+        
+    }
+
+    .contact h5 {
+        margin-bottom: 72px;
+    }
+
     .hero-text p {
         font-size: 1.618em;
         line-height: 42px;
         width: 44%;
         max-width: 380px;
-    
     }
+
+    .services-text p {
+        max-width: 380px;
+    }
+
+    .about-text p {
+        max-width: 450px;
+    }
+
+    .contact p {
+        width: 75%;
+        max-width: 770px
+    }
+
     .hero-text h1 {
         font-size: 4.236em;
         margin-top: -350px;
@@ -257,6 +310,28 @@ a:hover {
     }
 
     .About { 
+        display: flex;
+        justify-content: flex-start;
         padding-top: 72px;
+    }
+
+    .Contact {
+        padding: 144px 0;
+    }
+
+
+    .about-text {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 72px;
+    }
+
+    .jt-image {
+        max-width: 1600px;
+        width: 44%;
+        height: 100vh;
+        margin: 0;
     }
 }
